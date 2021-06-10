@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+            }
+            #top-bar{
+                background-color: #3b5998;
+                height: 100px;
+                vertical-align: middle;
+            }
+            #name{
+                float: left;
+                margin-top: 32px;
+                margin-left: 10px;
+                font-size: 25px;
+                color: white;
+                
+                
+            }
+            #input-container{
+                margin-top: 20px;
+                float: right;
+                margin-right: 10px;
+            }
+            #email{
+                font-size: 18px;
+                color: white;
+            }
+            #password{
+                font-size: 18px;
+                margin-left: 100px;
+                color: white;
+
+            }
+            .email-fields{
+                padding: 10px;
+                font-size: 15px;
+                margin-right: 5px;
+            }
+            .pass-field{
+                padding: 10px;
+                font-size: 15px;
+
+            }
+            #welcome-message{
+                display: inline-block;
+                font-weight: normal;
+                font-size: 30px;
+                width: 30vw;
+                margin-top: 200px;
+                margin-left: 60px;
+            }
+            #new-profile{
+                position: absolute;
+                margin-top: 80px;
+                margin-left: 400px;
+                width: 30vw;
+                display: inline-block;
+                text-align: center;
+            }
+            #input-fields{
+                text-align: left;
+            }
+            .name-field{
+                width: 13vw;
+                font-size: 15px;
+                padding: 8px;
+                margin: 4px;
+            }
+            .common{
+                width: 27vw;
+                font-size: 15px;
+                padding: 8px;
+                margin: 4px;
+            }
+            #dob{
+                font-size: 16px;
+                
+            }
+            #date{
+                font-size: 18px;
+                margin: 5px;
+            }
+            #disclaimer{
+                color: gray;
+                width: 20vw;
+            }
+            #submit{
+                background-color: green;
+                color: white;
+                font-size: 20px;
+                padding: 7px;
+                border: 0px solid green;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="" id="top-bar">
+            <label for = "name" id = "name">Facebook</label>
+            <div id = "input-container">
+                <label for = "email" id = "email">Email or Username</label> 
+                <label for = "password" id = "password">Password</label>
+            </br><input type = "text" placeholder="Email" required class = "email-fields"/>
+                
+                    <input type = "text" placeholder="Password" required class = "pass-field"/>
+            </div>
+        </div>
+        <div id = "main-section">
+            <h2 id = "welcome-message">Welcome to the world of Facebook</h2>
+            <div id = "new-profile">
+                <h1>Create an Account</h1>
+                <p>It's free and will always be</p>
+                <div id = "input-fields">
+                    <input type = "text" placeholder = "First Name" required class = "name-field">
+                    <input type = "text" placeholder = "Last Name" required class = "name-field">
+                    <input type = "text" placeholder = "Mobile Number or Email" required id ="identity" class = "common">
+                    <input type = "text" placeholder = "New Password" required id = "key" class ="common">
+                    <label for="dob" id = "dob">Date of Birth</label><br>
+                    <input type ="date" id = "date" >
+                    <p id ="disclaimer">By clicking Create an account, you agree to our <a href = "#">Terms</a> and
+                        confirm that you have read our <a href = "#">Data Policy</a>, including our <a href = "#">Cookie
+                            Use Policy</a>. You may receive SMS message notifications from
+                        Facebook and can opt out at any time.</p>
+                        <button id = "submit">Create an Account</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
